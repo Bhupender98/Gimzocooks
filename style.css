@@ -196,6 +196,7 @@ section {
     padding: 1rem 1.5rem;
     width: 30vw;
     font-family: inter;
+    text-align: justify;
 }
 
 .heading::before {
@@ -215,12 +216,17 @@ section {
 }
 
 .cards {
-    height: auto;
+    height: 100vh !important;
     width: 90%;
     margin: auto;
-    display: flex;
+    overflow: hidden;
+    display: inline-flex;
     justify-content: space-between;
     padding: 1rem;
+}
+
+.card::-webkit-scrollbar {
+    display: none;
 }
 
 .cards .card {
@@ -346,20 +352,44 @@ section {
     color: var(--greenish);
     text-align: center;
     padding: 4rem 0;
+    position: relative;
 }
 
 .follow-container {
     width: 100%;
-    height: auto;
+    padding: 0 1.5rem;
+    height: 250px;
+    display: inline-flex;
+    overflow: scroll;
     margin-top: 1.5rem;
-    justify-content: space-around !important;
-    flex-wrap: wrap;
+}
+
+.follow-container::-webkit-scrollbar {
+    display: none;
+}
+
+.btn-left,
+.btn-right {
+    padding: 0.2rem 0.9rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+
+}
+
+.btn-left {
+    margin-right: 1rem;
+}
+
+.btn-right {
+    margin-left: 1rem;
 }
 
 .follow-container img {
     height: 10rem;
-    width: 200px;
-    margin-top: 1rem;
+    width: 400px;
+    margin: 1rem;
 }
 
 /* form-main-container */
@@ -530,26 +560,24 @@ table button {
     }
 
     .cards {
-        height: auto;
+        max-height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 1rem;
+        margin: auto !important;
     }
 
     .cards .card {
-        width: 45%;
-        border: 1px solid var(--greenish);
-        padding: 0 0 1.5rem 0.5rem;
-    }
-
-    .card3 {
-        margin-top: 3rem;
-        padding-bottom: 3.5rem !important;
+        margin-top: 5rem;
+        width: 44%;
+        padding: 0 0 2.5rem 0.5rem;
     }
 
     .cardImage {
         height: 45%;
-        width: 108%;
+        width: 106%;
         position: relative;
         left: -13px;
         top: -15px;
@@ -572,7 +600,7 @@ table button {
     }
 
     .follow-container img {
-        width: 280px;
+        width: 400px;
     }
 
     .form-main-container {
@@ -709,24 +737,15 @@ table button {
 
     .cards {
         height: auto;
-        flex-wrap: wrap;
-        justify-content: space-around;
         padding: 1rem;
     }
 
     .cards .card {
-        width: 45%;
-        border: 1px solid var(--greenish);
-        padding: 0 0 1.5rem 0.5rem;
-    }
-
-    .card3 {
-        margin-top: 3rem;
-        padding-bottom: 3.5rem !important;
+        padding: 0 0 3rem 0.5rem;
     }
 
     .follow-container img {
-        width: 280px;
+        width: 400px;
     }
 
     /* form-main-container */
@@ -855,22 +874,7 @@ table button {
         font-size: 1rem !important;
     }
 
-    .cards {
-        height: auto;
-        width: 90%;
-        margin: auto;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
 
-    .cards .card {
-        width: 90% !important;
-        margin: auto;
-    }
-
-    .card2 {
-        margin: 2.5rem auto !important;
-    }
 
     /* carousel  */
     .carousel {
@@ -885,11 +889,19 @@ table button {
     .heading h3 {
         font-size: 1rem;
         width: 70%;
-        text-align: center;
+        text-align: justify;
     }
 
-    .follow-container img {
-        width: 280px;
+
+    .cards .card {
+        margin-top: 2rem;
+        width: 90%;
+        padding: 0 0 3rem 0;
+    }
+
+    .cardImage {
+        height: 42%;
+        width: 108%;
     }
 
     /* form-main-container */

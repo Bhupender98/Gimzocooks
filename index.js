@@ -50,3 +50,12 @@ nextBtn.addEventListener("click", (e) => {
   }
   goToSlide(index);
 });
+
+let followContainer = document.querySelector(".follow-container");
+let  width = followContainer.clientWidth;
+function leftScroll(){
+      followContainer.scrollLeft = followContainer.scrollLeft - 200;
+}
+function rightScroll(){
+      followContainer.scrollLeft = followContainer.scrollLeft + 200;
+}
