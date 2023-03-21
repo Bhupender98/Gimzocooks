@@ -1,0 +1,971 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --green: #0A3428;
+    --lightgreen: #B0D963;
+    --greenish: #BEB950;
+}
+
+@font-face {
+    font-family: evolve-sens;
+    src: url(./fonts/MADE\ Evolve\ Sans\ Bold\ \(PERSONAL\ USE\).otf);
+}
+
+@font-face {
+    font-family: ebarra-nova;
+    src: url(./fonts/IbarraRealNova-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: evolve-sens-light;
+    src: url(./fonts/MADE\ Evolve\ Sans\ Light\ EVO\ \(PERSONAL\ USE\).otf);
+}
+
+.item-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    height: 10vh;
+    background-color: var(--green);
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.company-logo p {
+    font-size: 0.6rem;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.horizontal-list {
+    width: 40%;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: var(--lightgreen);
+    font-family: evolve-sens;
+}
+
+/* toggle button  */
+.toggle-btn {
+    display: none;
+    height: 20px;
+    width: 30px;
+    margin-left: 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toggle-btn>div {
+    height: 4px;
+    width: 100%;
+    background-color: var(--greenish);
+}
+
+/* toggle menu begins  */
+.toggle-menu {
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 8vh;
+    left: -100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.nav-menu-items {
+    list-style: none;
+}
+
+.nav-menu-items li {
+    border-bottom: 2px solid white;
+    padding: 0.8rem;
+}
+
+.nav-menu-items li a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* toggle menu ends  */
+
+.container {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-video {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -2;
+}
+
+/* sections  */
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+.sayhello {
+    background: #F2F2EC;
+    text-align: center;
+    flex-direction: column;
+    color: #4D4B49;
+}
+
+.sayhello span {
+    color: var(--greenish);
+}
+
+.div1 {
+    width: 40%;
+    font-size: 1.7rem;
+    font-weight: 100;
+    font-family: ebarra-nova;
+}
+
+.div2 {
+    width: 60%;
+    margin: 2.5rem;
+    font-size: 1.2rem;
+    font-family: inter;
+}
+
+.sayhello button {
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+}
+
+/* page 4th  */
+.cards-container {
+    height: auto !important;
+    padding: 4rem 0;
+    color: #747373;
+}
+
+.heading {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.heading h3 {
+    padding: 1rem 1.5rem;
+    width: 30vw;
+    font-family: inter;
+}
+
+.heading::before {
+    content: "";
+    height: 2px;
+    width: 30%;
+    background: var(--greenish);
+    position: relative;
+}
+
+.heading::after {
+    content: "";
+    height: 2px;
+    width: 30%;
+    background: var(--greenish);
+    position: relative;
+}
+
+.cards {
+    height: auto;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.cards .card {
+    width: 28%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    border: 1px solid var(--greenish);
+}
+
+.cardImage {
+    height: 45%;
+    width: 108%;
+    position: relative;
+    left: -13px;
+    top: -15px;
+    z-index: -1;
+}
+
+.card span {
+    color: var(--greenish);
+}
+
+.card p {
+    padding: 2rem 1.5rem;
+    font-family: evolve-sens-light;
+}
+
+.arrow {
+    background: #E4E8E3;
+    padding: 1.2rem;
+    border-radius: 50%;
+}
+
+.content {
+    position: relative;
+    left: -14px;
+    color: gray !important;
+    font-family: ebarra-nova;
+}
+
+/* carousel slider  */
+
+.carousel {
+    background: #E3EADD;
+    color: var(--green);
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-item p {
+    padding: 1rem;
+    font-family: inter;
+}
+
+.carousel-item p i {
+    font-family: italic;
+    font-size: 0.9rem;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+/* carousel ends  */
+
+.follow {
+    height: auto !important;
+    background: var(--green);
+    color: var(--greenish);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.follow-container {
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+    justify-content: space-around !important;
+    flex-wrap: wrap;
+}
+
+.follow-container img {
+    height: 10rem;
+    width: 200px;
+    margin-top: 1rem;
+}
+
+/* form-main-container */
+.cannt-find {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    flex-direction: column;
+}
+
+.cannt-find h1 {
+    font-size: 3rem;
+    font-family: inter;
+}
+
+.form-main-container {
+    display: flex;
+    background: #EBF094;
+    height: 80vh !important;
+}
+
+.form-main-container>div {
+    width: 50%;
+}
+
+table tr td {
+    padding: 10px;
+}
+
+table tr td label {
+    padding: 8px !important;
+    color: rgb(85, 85, 85);
+}
+
+table tr td input,
+textarea {
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 7px;
+}
+
+#name,
+#upload {
+    width: 100%;
+}
+
+table button {
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background: var(--green);
+    color: var(--greenish);
+}
+
+/* options or last page  */
+.options {
+    display: flex;
+    justify-content: space-between;
+    height: auto !important;
+    padding: 2rem 0;
+}
+
+.options>div {
+    width: 22%;
+    height: auto !important;
+    padding: 0 1rem;
+}
+
+.options ul {
+    list-style: none;
+}
+
+.options ul li {
+    margin-top: 10px;
+}
+
+.options ul li a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #747373;
+}
+
+.darkText {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* social icons  */
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.social-icons i {
+    font-size: 15px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo p {
+    font-size: 0.6rem;
+    padding-top: 0.7rem;
+}
+
+/* media queries  */
+@media screen and (max-width: 992px) {
+    .company-logo h3 {
+        font-size: 1.4rem;
+    }
+
+    .company-logo p {
+        font-size: 0.8rem;
+    }
+
+    .horizontal-list {
+        width: 40%;
+        display: none;
+    }
+
+    .toggle-btn {
+        display: flex;
+        height: 28px;
+        width: 40px !important;
+    }
+
+    section {
+        height: auto;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .sayhello {
+        padding: 4rem 0;
+    }
+
+    .div1 {
+        width: 90%;
+        font-size: 1.4rem;
+    }
+
+    .div2 {
+        width: 95%;
+        margin: 2rem;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .cards {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .cards .card {
+        width: 45%;
+        border: 1px solid var(--greenish);
+        padding: 0 0 1.5rem 0.5rem;
+    }
+
+    .card3 {
+        margin-top: 3rem;
+        padding-bottom: 3.5rem !important;
+    }
+
+    .cardImage {
+        height: 45%;
+        width: 108%;
+        position: relative;
+        left: -13px;
+        top: -15px;
+        z-index: -1;
+    }
+
+    .card span {
+        color: var(--greenish);
+    }
+
+    .heading h3 {
+        font-size: 1rem;
+        width: 70%;
+        text-align: center;
+    }
+
+    .carousel-container {
+        height: auto;
+        padding: 8rem 0;
+    }
+
+    .follow-container img {
+        width: 280px;
+    }
+
+    .form-main-container {
+        height: auto !important;
+        padding: 2rem 0;
+        flex-wrap: wrap;
+    }
+
+    .form-main-container>div {
+        width: 90%;
+        margin: auto;
+    }
+
+    .cannt-find h1 {
+        font-size: 2.7rem;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-container form table {
+        width: 100%;
+        margin: auto;
+    }
+
+    .form-container form {
+        padding: 3rem 0;
+    }
+
+    .colspans {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #name {
+        height: 2.5rem !important;
+    }
+
+    .colspans td input {
+        width: 100%;
+        height: 2.5rem !important;
+    }
+
+    /* options or last page  */
+    .options {
+        flex-wrap: wrap !important;
+        padding: 2rem 0;
+    }
+
+    .options>div {
+        height: auto;
+        width: 45%;
+        margin: auto;
+    }
+
+    .darkText {
+        font-size: 1.5rem;
+    }
+
+    .semi {
+        min-height: 30vh;
+    }
+
+    .semi li a {
+        font-size: 1.1rem !important;
+    }
+
+    .logo {
+        order: 1;
+        height: 20vh !important;
+    }
+
+    .logo p {
+        font-size: 0.6rem;
+    }
+
+    .backtop {
+        order: 2;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .company-logo h3 {
+        font-size: 1.4rem;
+    }
+
+    .company-logo p {
+        font-size: 0.8rem;
+    }
+
+    .horizontal-list {
+        width: 40%;
+        display: none;
+    }
+
+    /* toggle button  */
+    .toggle-btn {
+        display: flex;
+        height: 28px;
+        width: 40px !important;
+    }
+
+    section {
+        height: auto;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .sayhello {
+        padding: 4rem 0;
+    }
+
+    .div1 {
+        width: 90%;
+        font-size: 1.4rem;
+    }
+
+    .div2 {
+        width: 95%;
+        margin: 2rem;
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+
+    .heading h3 {
+        font-size: 1rem;
+        width: 70%;
+        text-align: center;
+    }
+
+    .cards {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .cards .card {
+        width: 45%;
+        border: 1px solid var(--greenish);
+        padding: 0 0 1.5rem 0.5rem;
+    }
+
+    .card3 {
+        margin-top: 3rem;
+        padding-bottom: 3.5rem !important;
+    }
+
+    .follow-container img {
+        width: 280px;
+    }
+
+    /* form-main-container */
+    .form-main-container {
+        height: auto !important;
+        padding: 2rem 0;
+        flex-wrap: wrap;
+    }
+
+    .form-main-container>div {
+        width: 90%;
+        margin: auto;
+    }
+
+    .cannt-find h1 {
+        font-size: 2.5rem;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-container form table {
+        width: 100%;
+        margin: auto;
+    }
+
+    .form-container form {
+        padding: 2rem 0;
+    }
+
+    .colspans {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colspans td input {
+        width: 100%;
+    }
+
+    /* options or last page  */
+    .options {
+        flex-wrap: wrap !important;
+        padding: 2rem 0;
+    }
+
+    .options>div {
+        height: auto;
+        width: 45%;
+        margin: auto;
+    }
+
+    .semi {
+        min-height: 35vh;
+    }
+
+    .logo {
+        order: 1;
+        height: 20vh !important;
+    }
+
+    .logo p {
+        font-size: 0.6rem;
+    }
+
+    .backtop {
+        order: 2;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        height: 8vh;
+        padding: 0 1rem;
+    }
+
+    .company-logo h3 {
+        font-size: 1rem !important;
+    }
+
+    .company-logo p {
+        font-size: 0.4rem !important;
+    }
+
+    .horizontal-list {
+        width: 40%;
+        display: none;
+    }
+
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* toggle button  */
+    .toggle-btn {
+        display: flex;
+        height: 22px !important;
+        width: 30px !important;
+        justify-content: space-between;
+    }
+
+    section {
+        height: auto;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .sayhello {
+        padding: 4rem 0;
+    }
+
+    .div1 {
+        width: 90%;
+        font-size: 1.1rem !important;
+    }
+
+    .div2 {
+        width: 95%;
+        margin: 2rem;
+        text-align: justify;
+        font-size: 1rem !important;
+    }
+
+    .cards {
+        height: auto;
+        width: 90%;
+        margin: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .cards .card {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    .card2 {
+        margin: 2.5rem auto !important;
+    }
+
+    /* carousel  */
+    .carousel {
+        height: 450px;
+    }
+
+    .carousel-inner {
+        width: 75%;
+        margin: 3rem auto;
+    }
+
+    .heading h3 {
+        font-size: 1rem;
+        width: 70%;
+        text-align: center;
+    }
+
+    .follow-container img {
+        width: 280px;
+    }
+
+    /* form-main-container */
+    .form-main-container {
+        height: auto !important;
+        padding: 2rem 0;
+        flex-wrap: wrap;
+    }
+
+    .form-main-container>div {
+        width: 90%;
+        margin: auto;
+    }
+
+    .cannt-find h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .cannt-find p {
+        font-size: 0.8rem !important;
+        padding-top: 0.5rem;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-container form {
+        width: 100% !important;
+        padding: 2rem 0;
+    }
+
+    .colspans {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colspans td input {
+        width: 100%;
+    }
+
+    /* options or last page  */
+    .options {
+        flex-wrap: wrap !important;
+        padding: 2rem 0;
+    }
+
+    .options>div {
+        height: auto;
+        width: 50% !important;
+        margin: auto;
+    }
+
+    .darkText {
+        font-size: 0.7rem;
+    }
+
+    .semi {
+        min-height: 35vh;
+    }
+
+    .semi li a {
+        font-size: 0.6rem !important;
+    }
+
+    .logo {
+        order: 1;
+        height: 20vh !important;
+    }
+
+    .logo p {
+        font-size: 0.6rem;
+    }
+
+    .backtop {
+        order: 2;
+        text-align: center;
+    }
+}
