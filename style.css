@@ -219,13 +219,14 @@ section {
     height: 100vh !important;
     width: 90%;
     margin: auto;
-    overflow: hidden;
+    overflow: scroll;
     display: inline-flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 1rem;
 }
 
-.card::-webkit-scrollbar {
+.cards::-webkit-scrollbar {
     display: none;
 }
 
@@ -234,6 +235,7 @@ section {
     height: auto;
     text-align: center;
     position: relative;
+    margin-top: 2rem;
     border: 1px solid var(--greenish);
 }
 
