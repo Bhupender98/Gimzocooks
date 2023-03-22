@@ -30,10 +30,19 @@ function goToSlide(index) {
   carouselItems[index].classList.add("active");
   currentIndex = index;
 }
+let interval = setInterval(() => {
+  let index = currentIndex - 1;
+  if (index < 0) {
+    index = carouselItems.length - 1;
+  } else if (index >= carouselItems.length) {
+    index = 0;
+  }
+  goToSlide(index);
+}, 4000);
 
 prevBtn.addEventListener("click", (e) => {
+  clearInterval(interval);
   e.preventDefault();
-  console.log("prevclicked")
   let index = currentIndex - 1;
   if (index < 0) {
     index = carouselItems.length - 1;
@@ -42,8 +51,8 @@ prevBtn.addEventListener("click", (e) => {
 });
 
 nextBtn.addEventListener("click", (e) => {
+  clearInterval(interval);
   e.preventDefault();
-  console.log("nextClicked")
   let index = currentIndex + 1;
   if (index >= carouselItems.length) {
     index = 0;
@@ -51,11 +60,14 @@ nextBtn.addEventListener("click", (e) => {
   goToSlide(index);
 });
 
-let followContainer = document.querySelector(".follow-container");
-let  width = followContainer.clientWidth;
-function leftScroll(){
-      followContainer.scrollLeft = followContainer.scrollLeft - 200;
-}
-function rightScroll(){
-      followContainer.scrollLeft = followContainer.scrollLeft + 200;
-}
+// cards scroll handles 
+let cardsWidth = document.querySelector(".cards");
+let btnLeft = document.querySelector(".button-Left");
+let btnRight = document.querySelector(".button-right");
+let width = cardsWidth.clientWidth;
+btnLeft.addEventListener("click", () => {
+  cardsWidth.scrollLeft = cardsWidth.scrollLeft - (width+2);
+});
+btnRight.addEventListener("click", () => {
+  cardsWidth.scrollLeft = cardsWidth.scrollLeft + (width-2);
+});
