@@ -390,53 +390,32 @@ section {
     position: relative;
 }
 
+/* follow container starts  */
 .follow-container {
     width: 100%;
     padding: 0 1.5rem;
     margin-top: 1.5rem;
 }
 
-.follow-inner {
-    width: 90%;
-    height: 250px;
-    margin: auto;
-    display: flex;
-    overflow: scroll;
-}
-
-.follow-inner .card {
-    height: 100%;
-}
-
-.follow-inner .card img {
-    height: 98%;
-    width: 400px;
-    margin: 0 1rem;
-}
-
-.follow-inner::-webkit-scrollbar {
-    display: none;
-}
-
-.prev-button,
-.next-button {
-    background: transparent;
-    color: var(--greenish);
+.owl-nav button {
     position: absolute;
-    top: 55%;
-    padding: 0.2rem 0.9rem;
-    outline: none;
-    border: none;
-    font-size: 2rem;
+    top: 0;
+    bottom: 0;
 }
 
-.prev-button {
-    left: 1rem;
+.owl-prev {
+    right: -25px;
 }
 
-.next-button {
-    right: 0;
+.owl-next {
+    left: -25px;
 }
+
+.owl-nav button i {
+    font-size: 25px;
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* follow container starts  */
 
 /* form-main-container */
 .cannt-find {
@@ -935,14 +914,6 @@ table button {
         text-align: justify;
     }
 
-    .heading::before {
-        width: 5%;
-    }
-
-    .heading::after {
-        width: 5%;
-    }
-
     .cards .card {
         min-width: 90%;
         margin: 1rem;
@@ -970,46 +941,6 @@ table button {
     }
 
     /* card ends  */
-    .heading::before {
-        width: 5%;
-    }
-
-    .heading::after {
-        width: 5%;
-    }
-
-    .follow-inner .card {
-        height: 100%;
-        width: 99%;
-        border: 2px solid white;
-    }
-
-    .follow-inner .card img {
-        height: 100%;
-        min-width: 100%;
-        margin: 0;
-    }
-
-    .prev-button,
-    .next-button {
-        background: transparent;
-        color: var(--greenish);
-        position: absolute;
-        top: 55%;
-        padding: 0.2rem 0.9rem;
-        outline: none;
-        border: none;
-        font-size: 2rem;
-    }
-
-    .prev-button {
-        left: 1rem;
-    }
-
-    .next-button {
-        right: 0;
-    }
-
     /* form-main-container */
     .form-main-container {
         height: auto !important;
@@ -1057,20 +988,21 @@ table button {
 
     .options>div {
         height: auto;
-        width: 50% !important;
+        width: 100% !important;
         margin: auto;
     }
 
     .darkText {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .semi {
-        min-height: 35vh;
+        min-height: auto;
+        padding: 1rem !important;
     }
 
     .semi li a {
-        font-size: 0.6rem !important;
+        font-size: 0.7rem !important;
     }
 
     .logo {

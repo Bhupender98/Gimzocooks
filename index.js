@@ -71,15 +71,26 @@ function nextCard() {
   cardsWidth.scrollLeft = cardsWidth.scrollLeft + width; 
 }
 
-// follow container scroll bar
-let followContainer = document.querySelector(".follow-inner");
-function prevFollow() {
-  let width = followContainer.clientWidth;
-  followContainer.scrollLeft = followContainer.scrollLeft - width;
-  
-}
-function nextFollow() {
-  let width = followContainer.clientWidth;
-  followContainer.scrollLeft = followContainer.scrollLeft + width;
-}
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplay: true,
+  navText: [
+    '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+    '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+  ],
+  dots: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 5,
+    },
+  },
+});
 
