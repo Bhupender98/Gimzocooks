@@ -153,7 +153,8 @@
                             recipe as per
                             your gradient</i>
                     </div>
-                </div> <div class="card card3">
+                </div> 
+                <div class="card">
                     <!-- image card  -->
                     <img src="./Assets/card3.jpg" alt="food" class="cardImage">
 
@@ -253,8 +254,8 @@
                     </div>
                 </div>
             </div>
-            <button class="button-Left" >&lsaquo;</button>
-            <button class="button-right">&rsaquo;</button>
+            <button class="button-Left" onclick="prevCard()">&lsaquo;</button>
+            <button class="button-right" onclick="nextCard()">&rsaquo;</button>
         </div>
     </section>
     <!-- page 5th -- carousel slider -->
@@ -289,7 +290,7 @@
                 <p>- Birti Ishar <i>Toronto, Canada </i></p>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#" role="button">
+        <a class="carousel-control-prev"  href="#" role="button">
             <span class="carousel-control-icon" aria-hidden="true">&lsaquo;</span>
             <span class="sr-only">Previous</span>
         </a>
@@ -335,10 +336,9 @@
                     <img src="./Assets/card1.jpg" alt="Image 1">
                 </div>
             </div>
-        </div><br>
-        <div class="slider-buttons">
-            <button class="prev-button">&#8249;</button>
-            <button class="next-button">&#8250;</button>
+        <!-- </div> -->
+            <button class="prev-button" onclick="prevFollow()">&#10229;</button>
+            <button class="next-button" onclick="nextFollow()">&#10230;</button>
         </div>
     </section>
     <!-- page 7th form container -->

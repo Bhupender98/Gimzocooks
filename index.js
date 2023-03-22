@@ -60,14 +60,26 @@ nextBtn.addEventListener("click", (e) => {
   goToSlide(index);
 });
 
-// cards scroll handles 
+// cards scroll handles
 let cardsWidth = document.querySelector(".cards");
-let btnLeft = document.querySelector(".button-Left");
-let btnRight = document.querySelector(".button-right");
-let width = cardsWidth.clientWidth;
-btnLeft.addEventListener("click", () => {
-  cardsWidth.scrollLeft = cardsWidth.scrollLeft - (width+2);
-});
-btnRight.addEventListener("click", () => {
-  cardsWidth.scrollLeft = cardsWidth.scrollLeft + (width-2);
-});
+function prevCard() {
+  let width = cardsWidth.clientWidth;
+  cardsWidth.scrollLeft = cardsWidth.scrollLeft - width;
+};
+function nextCard() {
+  let width = cardsWidth.clientWidth;
+  cardsWidth.scrollLeft = cardsWidth.scrollLeft + width; 
+}
+
+// follow container scroll bar
+let followContainer = document.querySelector(".follow-inner");
+function prevFollow() {
+  let width = followContainer.clientWidth;
+  followContainer.scrollLeft = followContainer.scrollLeft - width;
+  
+}
+function nextFollow() {
+  let width = followContainer.clientWidth;
+  followContainer.scrollLeft = followContainer.scrollLeft + width;
+}
+
