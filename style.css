@@ -141,6 +141,16 @@ html {
     pointer-events: none;
     z-index: -2;
 }
+.over-text{
+    height: auto;
+    width: 20%;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    font-size: 2.2rem;
+    color: white;
+    font-family: inter;
+}
 
 /* sections  */
 section {
@@ -859,7 +869,12 @@ table button {
     .container {
         height: 100%;
     }
-
+.over-text {
+    width: 40%;
+    bottom: 25%;
+    left: 7%;
+    font-size: 1.4rem;
+}
     .sayhello {
         padding: 4rem 0;
     }
