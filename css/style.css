@@ -197,19 +197,6 @@ section {
     outline: none;
 }
 
-.cont{
-    height: auto;
-    width: 300px;
-    text-align: center;
-    margin-top: 1rem;
-}
-.cont .reserve{
-    font-size: 12px;
-    padding: 5px;
-}
-.cont .payment{
-    font-size: 10px;
-}
 /* page 4th  */
 .cards-main-container {
     width: 100%;
@@ -227,6 +214,7 @@ section {
     padding: 1rem 1.5rem;
     width: 30vw;
     font-family: inter;
+    font-weight: 400;
     text-align: justify;
 }
 
@@ -306,11 +294,11 @@ section {
 
 /* carousel slider  */
 .carousel {
+    height: 90vh !important;
     background: #E3EADD;
     color: var(--green);
     position: relative;
     width: 100%;
-    height: 400px;
     overflow: hidden;
 }
 
@@ -318,7 +306,7 @@ section {
     position: relative;
     width: 60%;
     height: 100%;
-    margin: 4rem auto;
+    margin: 13% auto;
     text-align: center;
 }
 
@@ -330,6 +318,10 @@ section {
     height: 100%;
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-item h1 {
+    padding-bottom: 1rem;
 }
 
 .carousel-item p {
@@ -358,7 +350,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color:var(--greenish);
+    color: var(--greenish);
     text-decoration: none;
     transition: opacity 0.3s ease-in-out;
 }
@@ -368,14 +360,16 @@ section {
     opacity: 1;
 }
 
-.carousel-control-prev span{
+.carousel-control-prev span {
     font-size: 2rem;
     font-weight: bold;
 }
-.carousel-control-next span{
+
+.carousel-control-next span {
     font-size: 2rem;
     font-weight: bold;
 }
+
 .carousel-control-prev {
     left: 10%;
 }
@@ -402,15 +396,18 @@ section {
     padding: 0 1.5rem;
     margin-top: 1.5rem;
 }
-.images{
+
+.images {
     height: 250px !important;
     width: 250px !important;
     margin: 4rem;
 }
-.images img{
+
+.images img {
     height: 100% !important;
     width: 100% !important;
 }
+
 .owl-nav button {
     position: absolute;
     top: 0;
@@ -435,7 +432,6 @@ section {
 
 /* follow container starts  */
 
-/* form-main-container */
 .cannt-find {
     display: flex;
     align-items: center;
@@ -495,7 +491,7 @@ table button {
     display: flex;
     justify-content: space-between;
     height: auto !important;
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 .options>div {
@@ -556,29 +552,65 @@ table button {
     font-size: 0.6rem;
     padding-top: 0.7rem;
 }
-.backtop{
-    width: 100px !important;
+
+.scroll_to_top {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #91a283;
+    font-size: 26px;
+    color: #044e3a;
     text-align: center;
-    border-radius: 50%;
-    padding: 1rem;
-    position: sticky;
-    bottom: 15%;
-    left: 90%;
-    z-index: 3;
+    line-height: 55px;
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 99999;
+    cursor: pointer;
+    border: solid 9px #dbe1d7;
 }
-.backtop h1{
-    border: 1px solid gray;
-    border-radius: 50%;
-    padding: 0.5rem;
-    background: #747373;
+
+.scroll_to_top span {
+    position: absolute;
+    line-height: 0px;
+    bottom: -20px;
+    font-family: 'Ibarra Real Nova';
+    width: 70px;
+    left: -1px;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 12px;
 }
-.backtop a{
-    font-size: 14px;
+
+.cont {
+    height: auto;
+    width: 300px;
+    text-align: center;
+    margin-top: 1drem;
+    padding-bottom: 2rem;
 }
+
+.cont .reserve {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.cont .payment {
+    font-size: 10px;
+}
+
 /* media queries  */
 @media screen and (max-width: 992px) {
+    .navbar {
+        height: 8vh !important;
+        padding: 0 3rem;
+    }
+
     .company-logo h3 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .company-logo p {
@@ -586,7 +618,6 @@ table button {
     }
 
     .horizontal-list {
-        width: 40%;
         display: none;
     }
 
@@ -596,13 +627,19 @@ table button {
         width: 40px !important;
     }
 
-    section {
-        height: auto;
-    }
-
     .container {
         height: 100%;
     }
+
+    .container video {
+        height: 100vh !important;
+    }
+        .over-text {
+            height: auto;
+            width: 40%;
+            bottom: 25%;
+            left: 10%;
+        }
 
     .sayhello {
         padding: 4rem 0;
@@ -610,12 +647,13 @@ table button {
 
     .div1 {
         width: 90%;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+        font-family: inter;
     }
 
     .div2 {
-        width: 95%;
-        margin: 2rem;
+        width: 65%;
+        margin: 4rem 0;
         text-align: center;
         font-size: 1.1rem;
     }
@@ -628,16 +666,40 @@ table button {
     }
 
     /* card ends  */
+    .carousel-item {
+        margin-top: 40% !important;
+    }
 
-    .carousel-container {
-        height: auto;
-        padding: 8rem 0;
+    .carousel-item p {
+        font-size: 1.5rem;
+    }
+
+    .follow {
+        height: 80vh !important;
+        padding-top: 9rem;
+    }
+
+    .follow h1 {
+        font-size: 2.5rem;
+    }
+
+    .follow i {
+        font-size: 1.2rem;
+    }
+
+    .caro {
+        padding-left: 1.5rem;
+    }
+
+    .follow .images {
+        height: 300px !important;
+        width: 300px !important;
     }
 
     .form-main-container {
         height: auto !important;
-        padding: 2rem 0;
-        flex-wrap: wrap;
+        padding: 2rem 1rem;
+        /* flex-wrap: wrap; */
     }
 
     .form-main-container>div {
@@ -646,7 +708,8 @@ table button {
     }
 
     .cannt-find h1 {
-        font-size: 2.7rem;
+        font-size: 2rem;
+        margin-top: -18rem;
     }
 
     .form-container {
@@ -679,17 +742,16 @@ table button {
     /* options or last page  */
     .options {
         flex-wrap: wrap !important;
-        padding: 2rem 0;
+        padding: 3rem 0;
+        justify-content: space-around;
     }
 
     .options>div {
-        height: auto;
-        width: 45%;
-        margin: auto;
+        width: 23%;
     }
 
     .darkText {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .semi {
@@ -697,22 +759,18 @@ table button {
     }
 
     .semi li a {
-        font-size: 1.1rem !important;
+        font-size: 0.6rem !important;
     }
 
     .logo {
-        order: 1;
-        height: 20vh !important;
+        display: none;
     }
 
-    .logo p {
-        font-size: 0.6rem;
+    .cont {
+        margin-top: 0rem;
+        padding-bottom: 4rem;
     }
 
-    .backtop {
-        order: 2;
-        text-align: center;
-    }
 }
 
 @media screen and (max-width: 768px) {

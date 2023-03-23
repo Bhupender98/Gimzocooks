@@ -51,8 +51,8 @@
     </nav>
     <!-- home page video section  -->
     <div class="container" id="home">
-        <video id="bg-video" width="100%" autoplay loop muted>
-            <source type="video/mp4" src="./Assets/foodTest.mp4">
+        <video id="bg-video" width="100%" style="height: 100%; object-fit: cover;"  autoplay loop muted>
+            <source type="video/mp4" src="./Assets/bg-video.mp4">
         </video>
         <div class="over-text">
             Cooking has never been<i> easier.</i>
@@ -167,10 +167,10 @@
         </div>
     </section>
     <!-- page 5th -- carousel slider -->
-    <div class="carousel" id="blog">
+    <div class="carousel carousel-container" id="blog">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <h1>&#8220;</h1>
+                <h1><i class="fa-solid fa-quote-left"></i></h1>
                 <p> Gizmocooks.com is an integrated food and appliance website that aims at highlighting the “joys” of
                     appliances in
                     everyday cooking. So whether you are looking to buy an appliance or simply wish to understand how to
@@ -180,7 +180,7 @@
                 <p>- Birti Ishar <i>Toronto, Canada </i></p>
             </div>
             <div class="carousel-item carouselOne">
-                <h1>&#8220;</h1>
+                <h1><i class="fa-solid fa-quote-left"></i></h1>
                 <p> started my career with BeeGee’s Marketing Promotions – a company involved in conceptualizing and
                     implementing some of
                     the most successful consumer promotions in India. Some of our clients include Samsung, Nestle,
@@ -189,7 +189,7 @@
                 <p>- Tina Nupur <i>Toronto, Canada </i></p>
             </div>
             <div class="carousel-item carouselOne">
-                <h1>&#8220;</h1>
+                <h1><i class="fa-solid fa-quote-left"></i></h1>
                 <p> We have also been associated with content development and production of video CDs, conducting
                     training programs for
                     sales and support staff as well as pre sale and post sale cookery classes for consumers of microwave
@@ -212,7 +212,7 @@
         <h1>Follow along</h1>
         <i>@gizmocooks</i><br>
         <div class="follow-container" id="caro_2">
-            <div class="owl-carousel owl-theme">
+            <div class="caro owl-carousel owl-theme">
                 <div class="item images">
                     <img src="./Assets/card1.jpg" alt="Image 1">
                 </div>
@@ -294,7 +294,6 @@
     <section class="options" id="contact">
         <div class="logo ">
             <img src="" alt="logo" srcset="">
-
         </div>
         <div class="home-list semi">
             <ul>
@@ -339,6 +338,8 @@
             </ul>
         </div>
     </section>
+    
+    <!-- social icons  -->
     <div class="cont">
         <div class="social-icons">
             <ul class="social-icons">
@@ -352,11 +353,12 @@
         <p class="reserve">GIZMOCOOKS ALL RIGHTS RESERVED</p>
         <p class="payment">PAYMENT METHODS ACCEPTED</p>
     </div>
-    <div class="backtop">
-        <h1>
-            <i class="fa-solid fa-arrow-up"></i>
-        </h1>
-        <a href="#"><i>Back to top</i></a>
+
+    <!-- scroll to top  -->
+    <div class="scroll_to_top" title="Scroll To Top" style="display: block;">
+        <i class="fa-solid fa-arrow-up-long"></i>
+        <br>
+        <span>Back to top</span>
     </div>
     <script src="./js/index.js"></script>
 </body>
