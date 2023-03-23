@@ -60,37 +60,50 @@ nextBtn.addEventListener("click", (e) => {
   goToSlide(index);
 });
 
-// cards scroll handles
-let cardsWidth = document.querySelector(".cards");
-function prevCard() {
-  let width = cardsWidth.clientWidth;
-  cardsWidth.scrollLeft = cardsWidth.scrollLeft - width;
-};
-function nextCard() {
-  let width = cardsWidth.clientWidth;
-  cardsWidth.scrollLeft = cardsWidth.scrollLeft + width; 
-}
+$(document).ready(function () {
+  $(".carousel1").owlCarousel({
+    loop: true,
+    nav: true,
+    autoplay: true,
+    dots: false,
+    navText: [
+      '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
 
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  autoplay: true,
-  navText: [
-    '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-    '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-  ],
-  dots: false,
-  responsive: {
-    0: {
-      items: 1,
+  $("#caro_2 .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: true,
+    rtl:true,
+    navText: [
+      '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+    ],
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
     },
-    600: {
-      items: 3,
-    },
-    1000: {
-      items: 5,
-    },
-  },
+  });
 });
-
