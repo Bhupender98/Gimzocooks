@@ -62,6 +62,7 @@ nextBtn.addEventListener("click", (e) => {
 
 $(document).ready(function () {
   $(".carousel1").owlCarousel({
+    margin: 50,
     loop: true,
     nav: true,
     autoplay: true,
