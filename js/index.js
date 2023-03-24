@@ -109,5 +109,13 @@ $(document).ready(function () {
   });
 });
 
-
+let backTop = document.querySelector(".scroll_to_top");
+window.addEventListener("scroll",() => {
+  if(window.pageYOffset>100){
+    backTop.classList.add('active');
+  }
+  else{
+    backTop.classList.remove('active');
+  }
+}); 
 

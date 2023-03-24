@@ -586,6 +586,10 @@ table button {
     z-index: 99999;
     cursor: pointer;
     border: solid 9px #dbe1d7;
+    opacity: 0;
+}
+.scroll_to_top.active{
+    opacity: 1;
 }
 
 .scroll_to_top span {
