@@ -134,15 +134,10 @@ html {
     width: 100%;
     overflow: hidden;
     background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-.bg-video {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
+#bg-video {
     pointer-events: none;
     z-index: -2;
 }
@@ -631,15 +626,19 @@ table button {
         height: 100%;
     }
 
-    .container video {
-        height: 100vh !important;
+    #bg-video {
+        height: 92vh;
+        object-fit: cover;
+        pointer-events: none;
+        z-index: -2;
     }
-        .over-text {
-            height: auto;
-            width: 40%;
-            bottom: 25%;
-            left: 10%;
-        }
+
+    .over-text {
+        height: auto;
+        width: 40%;
+        bottom: 12%;
+        left: 10%;
+    }
 
     .sayhello {
         padding: 4rem 0;
@@ -774,66 +773,29 @@ table button {
 }
 
 @media screen and (max-width: 768px) {
-    .company-logo h3 {
-        font-size: 1.4rem;
-    }
 
-    .company-logo p {
-        font-size: 0.8rem;
-    }
-
-    .horizontal-list {
-        width: 40%;
-        display: none;
-    }
-
-    /* toggle button  */
-    .toggle-btn {
-        display: flex;
-        height: 28px;
-        width: 40px !important;
-    }
-
-    section {
-        height: auto;
-    }
-
-    .container {
-        height: 100%;
-    }
-
-    .sayhello {
-        padding: 4rem 0;
-    }
-
-    .sayhello button {
-        font-size: 1rem;
-    }
-
-    .div1 {
-        width: 90%;
-        font-size: 1.4rem;
-    }
-
-    .div2 {
-        width: 95%;
-        margin: 2rem;
-        text-align: justify;
-        font-size: 1.1rem;
-    }
-
+    /* cards container  */
     .heading h3 {
-        font-size: 0.8rem;
-        width: 90%;
-        text-align: center;
-        font-weight: 400;
+        width: 80%;
     }
 
-    /* form-main-container */
+    /* card ends  */
+    .carousel-item {
+        margin-top: 30% !important;
+    }
+
+    .follow {
+        height: 100vh !important;
+    }
+
+    .follow i {
+        font-size: 1.2rem;
+    }
+
     .form-main-container {
         height: auto !important;
-        padding: 2rem 0;
-        flex-wrap: wrap;
+        padding: 2rem 1rem;
+        /* flex-wrap: wrap; */
     }
 
     .form-main-container>div {
@@ -842,7 +804,8 @@ table button {
     }
 
     .cannt-find h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-top: -18rem;
     }
 
     .form-container {
@@ -855,7 +818,7 @@ table button {
     }
 
     .form-container form {
-        padding: 2rem 0;
+        padding: 3rem 0;
     }
 
     .colspans {
@@ -863,130 +826,112 @@ table button {
         flex-direction: column;
     }
 
+    #name {
+        height: 2.5rem !important;
+    }
+
     .colspans td input {
         width: 100%;
+        height: 2.5rem !important;
     }
 
     /* options or last page  */
     .options {
         flex-wrap: wrap !important;
-        padding: 2rem 0;
+        padding: 3rem 0;
+        justify-content: space-around;
     }
 
     .options>div {
-        height: auto;
-        width: 45%;
-        margin: auto;
+        width: 23%;
+    }
+
+    .darkText {
+        font-size: 1.1rem;
     }
 
     .semi {
-        min-height: 35vh;
+        min-height: 30vh;
+    }
+
+    .semi li a {
+        font-size: 0.6rem !important;
     }
 
     .logo {
-        order: 1;
-        height: 20vh !important;
+        display: none;
     }
 
-    .logo p {
-        font-size: 0.6rem;
-    }
-
-    .backtop {
-        order: 2;
-        text-align: center;
+    .cont {
+        margin-top: 0rem;
+        padding-bottom: 4rem;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .navbar {
-        height: 8vh;
-        padding: 0 1rem;
-    }
 
     .company-logo h3 {
-        font-size: 1rem !important;
+        font-size: 1.1rem;
     }
 
-    .company-logo p {
-        font-size: 0.4rem !important;
-    }
-
-    .horizontal-list {
-        width: 40%;
-        display: none;
-    }
-
-    .nav-menu {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    /* toggle button  */
     .toggle-btn {
-        display: flex;
-        height: 22px !important;
-        width: 30px !important;
-        justify-content: space-between;
+        height: 26px;
+        width: 38px !important;
     }
 
-    .nav-menu-items li a {
-        padding-left: 1rem;
-        font-size: 1.1rem;
+    #bg-video {
+        height: 30vh;
+        object-fit: cover;
     }
 
-    section {
-        height: auto;
-    }
-
-    .container {
-        height: 100%;
-    }
-
-    .over-text {
-        width: 35%;
-        bottom: 25%;
-        left: 7%;
-        font-size: 1.1rem;
-    }
-
-    .sayhello {
-        padding: 4rem 0;
-    }
-
-    .div1 {
-        width: 90%;
-        font-size: 1.1rem !important;
-    }
-
-    .div2 {
-        width: 95%;
-        margin: 2rem;
-        text-align: justify;
-        font-size: 1rem !important;
-    }
-
-    /* carousel  */
-    .carousel {
-        height: 450px;
-    }
-
-    .carousel-inner {
-        width: 75%;
-        margin: 3rem auto;
-    }
+    /* cards container  */
 
     .heading h3 {
-        font-size: 1rem;
+        padding: 1rem;
+        font-size: 0.8rem !important;
         width: 90%;
-        text-align: justify;
     }
 
-    /* form-main-container */
+    .heading::before {
+        width: 5%;
+    }
+
+    .heading::after {
+        content: "";
+        height: 2px;
+        width: 5%;
+        background: var(--greenish);
+        position: relative;
+    }
+
+    .cards-container .cards .card {
+        width: 93%;
+    }
+    /* card ends  */
+    .carousel-item {
+        margin-top: 50% !important;
+    }
+
+    .carousel-item p {
+        font-size: 1.2rem;
+    }
+
+    .follow {
+        padding-top: 7rem;
+    }
+
+    .follow h1 {
+        font-size: 2.2rem;
+    }
+
+    .caro {
+        padding-left: 0.5rem;
+    }
+    
     .form-main-container {
         height: auto !important;
-        padding: 2rem 0;
+        border: 2px solid red;
+        padding: 2rem 1rem;
         flex-wrap: wrap;
     }
 
@@ -996,21 +941,21 @@ table button {
     }
 
     .cannt-find h1 {
-        font-size: 1.8rem !important;
-    }
-
-    .cannt-find p {
-        font-size: 0.8rem !important;
-        padding-top: 0.5rem;
+        font-size: 2rem;
+        margin-top: -18rem;
     }
 
     .form-container {
         width: 100%;
     }
 
+    .form-container form table {
+        width: 100%;
+        margin: auto;
+    }
+
     .form-container form {
-        width: 100% !important;
-        padding: 2rem 0;
+        padding: 3rem 0;
     }
 
     .colspans {
@@ -1018,46 +963,210 @@ table button {
         flex-direction: column;
     }
 
+    #name {
+        height: 2.5rem !important;
+    }
+
     .colspans td input {
         width: 100%;
+        height: 2.5rem !important;
     }
 
     /* options or last page  */
     .options {
         flex-wrap: wrap !important;
-        padding: 2rem 0;
+        padding: 3rem 0;
+        justify-content: space-around;
     }
 
     .options>div {
-        height: auto;
-        width: 100% !important;
-        margin: auto;
+        width: 23%;
     }
 
     .darkText {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 
     .semi {
-        min-height: auto;
-        padding: 1rem !important;
+        min-height: 30vh;
     }
 
     .semi li a {
-        font-size: 0.7rem !important;
+        font-size: 0.6rem !important;
     }
 
     .logo {
-        order: 1;
-        height: 20vh !important;
+        display: none;
     }
 
-    .logo p {
-        font-size: 0.6rem;
+    .cont {
+        margin-top: 0rem;
+        padding-bottom: 4rem;
     }
 
-    .backtop {
-        order: 2;
-        text-align: center;
-    }
 }
+
+/* @media screen and (max-width: 600px) { */
+.navbar {
+    height: 8vh;
+    padding: 0 1rem;
+}
+
+.company-logo h3 {
+    font-size: 1rem !important;
+}
+
+.company-logo p {
+    font-size: 0.4rem !important;
+}
+
+.horizontal-list {
+    width: 40%;
+    display: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* toggle button  */
+.toggle-btn {
+    display: flex;
+    height: 22px !important;
+    width: 30px !important;
+    justify-content: space-between;
+}
+
+.nav-menu-items li a {
+    padding-left: 1rem;
+    font-size: 1.1rem;
+}
+
+section {
+    height: auto;
+}
+
+.container {
+    height: 100%;
+}
+
+.over-text {
+    width: 35%;
+    bottom: 25%;
+    left: 7%;
+    font-size: 1.1rem;
+}
+
+.sayhello {
+    padding: 4rem 0;
+}
+
+.div1 {
+    width: 90%;
+    font-size: 1.1rem !important;
+}
+
+.div2 {
+    width: 95%;
+    margin: 2rem;
+    text-align: justify;
+    font-size: 1rem !important;
+}
+
+/* carousel  */
+.carousel {
+    height: 450px;
+}
+
+.carousel-inner {
+    width: 75%;
+    margin: 3rem auto;
+}
+
+.heading h3 {
+    font-size: 1rem;
+    width: 90%;
+    text-align: justify;
+}
+
+/* form-main-container */
+.form-main-container {
+    height: auto !important;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.form-main-container>div {
+    width: 90%;
+    margin: auto;
+}
+
+.cannt-find h1 {
+    font-size: 1.8rem !important;
+}
+
+.cannt-find p {
+    font-size: 0.8rem !important;
+    padding-top: 0.5rem;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form-container form {
+    width: 100% !important;
+    padding: 2rem 0;
+}
+
+.colspans {
+    display: flex;
+    flex-direction: column;
+}
+
+.colspans td input {
+    width: 100%;
+}
+
+/* options or last page  */
+.options {
+    flex-wrap: wrap !important;
+    padding: 2rem 0;
+}
+
+.options>div {
+    height: auto;
+    width: 100% !important;
+    margin: auto;
+}
+
+.darkText {
+    font-size: 0.8rem;
+}
+
+.semi {
+    min-height: auto;
+    padding: 1rem !important;
+}
+
+.semi li a {
+    font-size: 0.7rem !important;
+}
+
+.logo {
+    order: 1;
+    height: 20vh !important;
+}
+
+.logo p {
+    font-size: 0.6rem;
+}
+
+.backtop {
+    order: 2;
+    text-align: center;
+}
+
+/* } */

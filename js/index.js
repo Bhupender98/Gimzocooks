@@ -64,6 +64,7 @@ $(document).ready(function () {
   $(".carousel1").owlCarousel({
     margin: 50,
     loop: true,
+    rtl:true,
     nav: true,
     autoplay: true,
     dots: false,
@@ -88,7 +89,7 @@ $(document).ready(function () {
     loop: true,
     margin: 10,
     nav: true,
-    autoplay: true,
+    autoplay: false,
     rtl:true,
     navText: [
       '<i class="fa fa-angle-right" aria-hidden="true"></i>',
