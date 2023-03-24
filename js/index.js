@@ -64,7 +64,6 @@ $(document).ready(function () {
   $(".carousel1").owlCarousel({
     margin: 50,
     loop: true,
-    rtl:true,
     nav: true,
     autoplay: true,
     dots: false,
@@ -109,4 +108,12 @@ $(document).ready(function () {
     },
   });
 });
+
+let scrollBar = document.querySelector('.scroll_to_top');
+if (window.innerHeight>800) {
+  scrollBar.style.display = 'block';  
+}else{
+  scrollBar.style.display = 'none';
+  
+}
 

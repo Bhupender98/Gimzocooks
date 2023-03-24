@@ -197,7 +197,6 @@ section {
     width: 100%;
     height: auto;
     padding: 2rem;
-    /* background: #000; */
 }
 
 .heading {
@@ -241,7 +240,7 @@ section {
     padding: 1rem;
 }
 
-.cards .item .card {
+.cards .item {
     height: auto;
     margin: 1.5rem;
     position: relative;
@@ -376,11 +375,11 @@ section {
 /* carousel ends  */
 
 .follow {
-    height: 90vh !important;
+    height: 95vh !important;
     background: var(--green);
     color: var(--greenish);
     text-align: center;
-    padding: 4rem 0;
+    padding: 8rem 0;
     position: relative;
 }
 
@@ -392,10 +391,9 @@ section {
     margin-top: 1.5rem;
 }
 
-.images {
+.item img {
     height: 250px !important;
     width: 250px !important;
-    margin: 4rem;
 }
 
 .images img {
@@ -426,27 +424,28 @@ section {
 }
 
 /* follow container starts  */
+.form-main-container {
+    display: flex;
+    background: #EBF094;
+    height: 100vh !important;
+    flex-wrap: wrap;
+}
+
+.form-main-container>div {
+    width: 50%;
+}
 
 .cannt-find {
     display: flex;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 8rem;
     flex-direction: column;
 }
 
 .cannt-find h1 {
     font-size: 3rem;
     font-family: inter;
-}
-
-.form-main-container {
-    display: flex;
-    background: #EBF094;
-    height: 80vh !important;
-}
-
-.form-main-container>div {
-    width: 50%;
+    font-weight: 400;
 }
 
 table tr td {
@@ -481,15 +480,20 @@ table button {
     color: var(--greenish);
 }
 
-/* options or last page  */
+/* home-list or last page  */
 .options {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     height: auto !important;
     padding: 4rem 0;
+    color: #5D735E;
 }
 
-.options>div {
+.contact-container {
+    display: flex;
+}
+
+.contact-container>div {
     width: 22%;
     height: auto !important;
     padding: 0 1rem;
@@ -512,6 +516,7 @@ table button {
 .darkText {
     font-weight: bold;
     margin-bottom: 1rem;
+    color: #5D735E;
 }
 
 /* social icons  */
@@ -519,6 +524,11 @@ table button {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.social-icons ul {
+    flex-direction: row;
 }
 
 .social-icons li {
@@ -536,15 +546,28 @@ table button {
 }
 
 .social-icons i {
-    font-size: 15px;
+    font-size: 1.2rem;
+    color: #5D735E;
 }
 
 .logo {
     text-align: center;
 }
 
+.logo img {
+    height: 200px;
+    width: 200px;
+}
+
+.co-logo img {
+    height: 200px;
+    width: 200px;
+    display: none;
+
+}
+
 .logo p {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     padding-top: 0.7rem;
 }
 
@@ -582,591 +605,14 @@ table button {
 
 .cont {
     height: auto;
-    width: 300px;
+    width: 100%;
     text-align: center;
-    margin-top: 1drem;
-    padding-bottom: 2rem;
+    padding: 0 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .cont .reserve {
     font-size: 12px;
-    padding: 5px;
+    padding: 0px;
 }
-
-.cont .payment {
-    font-size: 10px;
-}
-
-/* media queries  */
-@media screen and (max-width: 992px) {
-    .navbar {
-        height: 8vh !important;
-        padding: 0 3rem;
-    }
-
-    .company-logo h3 {
-        font-size: 1.3rem;
-    }
-
-    .company-logo p {
-        font-size: 0.8rem;
-    }
-
-    .horizontal-list {
-        display: none;
-    }
-
-    .toggle-btn {
-        display: flex;
-        height: 28px;
-        width: 40px !important;
-    }
-
-    .container {
-        height: 100%;
-    }
-
-    #bg-video {
-        height: 92vh;
-        object-fit: cover;
-        pointer-events: none;
-        z-index: -2;
-    }
-
-    .over-text {
-        height: auto;
-        width: 40%;
-        bottom: 12%;
-        left: 10%;
-    }
-
-    .sayhello {
-        padding: 4rem 0;
-    }
-
-    .div1 {
-        width: 90%;
-        font-size: 1.8rem;
-        font-family: inter;
-    }
-
-    .div2 {
-        width: 65%;
-        margin: 4rem 0;
-        text-align: center;
-        font-size: 1.1rem;
-    }
-
-    /* cards container  */
-    .heading h3 {
-        font-size: 1.1rem;
-        width: 70%;
-        text-align: center;
-    }
-
-    /* card ends  */
-    .carousel-item {
-        margin-top: 40% !important;
-    }
-
-    .carousel-item p {
-        font-size: 1.5rem;
-    }
-
-    .follow {
-        height: 80vh !important;
-        padding-top: 9rem;
-    }
-
-    .follow h1 {
-        font-size: 2.5rem;
-    }
-
-    .follow i {
-        font-size: 1.2rem;
-    }
-
-    .caro {
-        padding-left: 1.5rem;
-    }
-
-    .follow .images {
-        height: 300px !important;
-        width: 300px !important;
-    }
-
-    .form-main-container {
-        height: auto !important;
-        padding: 2rem 1rem;
-        /* flex-wrap: wrap; */
-    }
-
-    .form-main-container>div {
-        width: 90%;
-        margin: auto;
-    }
-
-    .cannt-find h1 {
-        font-size: 2rem;
-        margin-top: -18rem;
-    }
-
-    .form-container {
-        width: 100%;
-    }
-
-    .form-container form table {
-        width: 100%;
-        margin: auto;
-    }
-
-    .form-container form {
-        padding: 3rem 0;
-    }
-
-    .colspans {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #name {
-        height: 2.5rem !important;
-    }
-
-    .colspans td input {
-        width: 100%;
-        height: 2.5rem !important;
-    }
-
-    /* options or last page  */
-    .options {
-        flex-wrap: wrap !important;
-        padding: 3rem 0;
-        justify-content: space-around;
-    }
-
-    .options>div {
-        width: 23%;
-    }
-
-    .darkText {
-        font-size: 1.1rem;
-    }
-
-    .semi {
-        min-height: 30vh;
-    }
-
-    .semi li a {
-        font-size: 0.6rem !important;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .cont {
-        margin-top: 0rem;
-        padding-bottom: 4rem;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    /* cards container  */
-    .heading h3 {
-        width: 80%;
-    }
-
-    /* card ends  */
-    .carousel-item {
-        margin-top: 30% !important;
-    }
-
-    .follow {
-        height: 100vh !important;
-    }
-
-    .follow i {
-        font-size: 1.2rem;
-    }
-
-    .form-main-container {
-        height: auto !important;
-        padding: 2rem 1rem;
-        /* flex-wrap: wrap; */
-    }
-
-    .form-main-container>div {
-        width: 90%;
-        margin: auto;
-    }
-
-    .cannt-find h1 {
-        font-size: 2rem;
-        margin-top: -18rem;
-    }
-
-    .form-container {
-        width: 100%;
-    }
-
-    .form-container form table {
-        width: 100%;
-        margin: auto;
-    }
-
-    .form-container form {
-        padding: 3rem 0;
-    }
-
-    .colspans {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #name {
-        height: 2.5rem !important;
-    }
-
-    .colspans td input {
-        width: 100%;
-        height: 2.5rem !important;
-    }
-
-    /* options or last page  */
-    .options {
-        flex-wrap: wrap !important;
-        padding: 3rem 0;
-        justify-content: space-around;
-    }
-
-    .options>div {
-        width: 23%;
-    }
-
-    .darkText {
-        font-size: 1.1rem;
-    }
-
-    .semi {
-        min-height: 30vh;
-    }
-
-    .semi li a {
-        font-size: 0.6rem !important;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .cont {
-        margin-top: 0rem;
-        padding-bottom: 4rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-
-    .company-logo h3 {
-        font-size: 1.1rem;
-    }
-
-    .toggle-btn {
-        height: 26px;
-        width: 38px !important;
-    }
-
-    #bg-video {
-        height: 30vh;
-        object-fit: cover;
-    }
-
-    /* cards container  */
-
-    .heading h3 {
-        padding: 1rem;
-        font-size: 0.8rem !important;
-        width: 90%;
-    }
-
-    .heading::before {
-        width: 5%;
-    }
-
-    .heading::after {
-        content: "";
-        height: 2px;
-        width: 5%;
-        background: var(--greenish);
-        position: relative;
-    }
-
-    .cards-container .cards .card {
-        width: 93%;
-    }
-    /* card ends  */
-    .carousel-item {
-        margin-top: 50% !important;
-    }
-
-    .carousel-item p {
-        font-size: 1.2rem;
-    }
-
-    .follow {
-        padding-top: 7rem;
-    }
-
-    .follow h1 {
-        font-size: 2.2rem;
-    }
-
-    .caro {
-        padding-left: 0.5rem;
-    }
-    
-    .form-main-container {
-        height: auto !important;
-        border: 2px solid red;
-        padding: 2rem 1rem;
-        flex-wrap: wrap;
-    }
-
-    .form-main-container>div {
-        width: 90%;
-        margin: auto;
-    }
-
-    .cannt-find h1 {
-        font-size: 2rem;
-        margin-top: -18rem;
-    }
-
-    .form-container {
-        width: 100%;
-    }
-
-    .form-container form table {
-        width: 100%;
-        margin: auto;
-    }
-
-    .form-container form {
-        padding: 3rem 0;
-    }
-
-    .colspans {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #name {
-        height: 2.5rem !important;
-    }
-
-    .colspans td input {
-        width: 100%;
-        height: 2.5rem !important;
-    }
-
-    /* options or last page  */
-    .options {
-        flex-wrap: wrap !important;
-        padding: 3rem 0;
-        justify-content: space-around;
-    }
-
-    .options>div {
-        width: 23%;
-    }
-
-    .darkText {
-        font-size: 1.1rem;
-    }
-
-    .semi {
-        min-height: 30vh;
-    }
-
-    .semi li a {
-        font-size: 0.6rem !important;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .cont {
-        margin-top: 0rem;
-        padding-bottom: 4rem;
-    }
-
-}
-
-/* @media screen and (max-width: 600px) { */
-.navbar {
-    height: 8vh;
-    padding: 0 1rem;
-}
-
-.company-logo h3 {
-    font-size: 1rem !important;
-}
-
-.company-logo p {
-    font-size: 0.4rem !important;
-}
-
-.horizontal-list {
-    width: 40%;
-    display: none;
-}
-
-.nav-menu {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-/* toggle button  */
-.toggle-btn {
-    display: flex;
-    height: 22px !important;
-    width: 30px !important;
-    justify-content: space-between;
-}
-
-.nav-menu-items li a {
-    padding-left: 1rem;
-    font-size: 1.1rem;
-}
-
-section {
-    height: auto;
-}
-
-.container {
-    height: 100%;
-}
-
-.over-text {
-    width: 35%;
-    bottom: 25%;
-    left: 7%;
-    font-size: 1.1rem;
-}
-
-.sayhello {
-    padding: 4rem 0;
-}
-
-.div1 {
-    width: 90%;
-    font-size: 1.1rem !important;
-}
-
-.div2 {
-    width: 95%;
-    margin: 2rem;
-    text-align: justify;
-    font-size: 1rem !important;
-}
-
-/* carousel  */
-.carousel {
-    height: 450px;
-}
-
-.carousel-inner {
-    width: 75%;
-    margin: 3rem auto;
-}
-
-.heading h3 {
-    font-size: 1rem;
-    width: 90%;
-    text-align: justify;
-}
-
-/* form-main-container */
-.form-main-container {
-    height: auto !important;
-    padding: 2rem 0;
-    flex-wrap: wrap;
-}
-
-.form-main-container>div {
-    width: 90%;
-    margin: auto;
-}
-
-.cannt-find h1 {
-    font-size: 1.8rem !important;
-}
-
-.cannt-find p {
-    font-size: 0.8rem !important;
-    padding-top: 0.5rem;
-}
-
-.form-container {
-    width: 100%;
-}
-
-.form-container form {
-    width: 100% !important;
-    padding: 2rem 0;
-}
-
-.colspans {
-    display: flex;
-    flex-direction: column;
-}
-
-.colspans td input {
-    width: 100%;
-}
-
-/* options or last page  */
-.options {
-    flex-wrap: wrap !important;
-    padding: 2rem 0;
-}
-
-.options>div {
-    height: auto;
-    width: 100% !important;
-    margin: auto;
-}
-
-.darkText {
-    font-size: 0.8rem;
-}
-
-.semi {
-    min-height: auto;
-    padding: 1rem !important;
-}
-
-.semi li a {
-    font-size: 0.7rem !important;
-}
-
-.logo {
-    order: 1;
-    height: 20vh !important;
-}
-
-.logo p {
-    font-size: 0.6rem;
-}
-
-.backtop {
-    order: 2;
-    text-align: center;
-}
-
-/* } */

@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* desktop and laptop  */
+@media (min-width: 1024px) {}
+
+
+/* tablet and ipads  */
+@media (min-width: 769px)and (max-width:1023px) {}
+
+/* mobile view  */
+@media (max-width: 768px) {
+    .navbar {
+        height: 8vh !important;
+        padding: 0 3rem;
+    }
+
+    .company-logo h3 {
+        font-size: 1.3rem;
+    }
+
+    .company-logo p {
+        font-size: 0.8rem;
+    }
+
+    .horizontal-list {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: flex;
+        height: 28px;
+        width: 40px !important;
+    }
+
+    #bg-video {
+        height: 92vh;
+        object-fit: cover;
+        pointer-events: none;
+        z-index: -2;
+    }
+
+    .over-text {
+        height: auto;
+        width: 40%;
+        bottom: 12%;
+        left: 10%;
+    }
+
+    .sayhello {
+        padding: 4rem 0;
+    }
+
+    .div1 {
+        width: 90%;
+        font-size: 1.8rem;
+        font-family: inter;
+    }
+
+    .div2 {
+        width: 65%;
+        margin: 4rem 0;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    /* cards container  */
+    .heading h3 {
+        font-size: 1.1rem;
+        width: 90%;
+    }
+
+    .carousel-item {
+        margin-top: 9rem;
+    }
+
+    .follow {
+        height: 100vh !important;
+        padding-top: 15rem;
+    }
+
+    .follow h1 {
+        font-size: 2.5rem;
+    }
+
+    .follow i {
+        font-size: 1.4rem;
+    }
+
+    .follow .item img {
+        height: 350px !important;
+        width: 350px !important;
+    }
+
+    /* form container  */
+    .form-main-container {
+        height: auto !important;
+        padding: 2rem 1rem;
+    }
+
+    .form-main-container>div {
+        margin: auto;
+    }
+
+    .cannt-find {
+        height: 100% !important;
+        width: 40% !important;
+    }
+
+    .cannt-find h1 {
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-top: -19rem;
+        font-weight: 400;
+    }
+
+    .cannt-find p {
+        font-size: 15px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-container form table {
+        width: 100%;
+        margin: auto;
+    }
+
+    .form-container form {
+        padding: 3rem 0;
+    }
+
+    .colspans {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #name {
+        height: 2.5rem !important;
+    }
+
+    .colspans td input {
+        width: 100%;
+        height: 2.5rem !important;
+    }
+
+    /* options or footer section  */
+    .contact-container {
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .contact-container>div {
+        width: 25%;
+        padding: 0 0.8rem;
+    }
+
+    .options ul li a {
+        font-size: 0.65rem;
+    }
+
+    .darkText {
+        margin-bottom: 0.8rem;
+    }
+
+    /* social icons  */
+    .social-icons {
+        width: 60%;
+    }
+
+    .social-icons li {
+        margin-right: 15px;
+    }
+
+    .social-icons i {
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .co-logo img {
+        display: block;
+        padding-bottom: 1rem;
+    }
+
+    .logo p {
+        font-size: 0.7rem;
+    }
+
+    .cont {
+        text-align: left;
+        padding: 0 3rem 2rem;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 468px) {
+    .navbar {
+        height: 9vh !important;
+        padding: 0 1rem;
+    }
+
+    .company-logo h3 {
+        font-size: 1.1rem;
+    }
+
+    .company-logo p {
+        font-size: 0.7rem;
+    }
+
+    .toggle-btn {
+        height: 25px;
+        width: 30px !important;
+    }
+
+    .container {
+        height: 30vh;
+    }
+
+    #bg-video {
+        height: 30vh;
+        object-fit: none;
+    }
+
+    .over-text {
+        font-size: 20px;
+        bottom: 18%;
+        left: 5%;
+    }
+
+    .div1 h1 {
+        font-weight: 400;
+    }
+
+    .div2 {
+        width: 90%;
+    }
+
+    /* cards container  */
+    .heading h3 {
+        font-size: 0.8rem;
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .heading::before {
+        width: 5%;
+    }
+
+    .heading::after {
+        width: 5%;
+    }
+
+    .cards .item {
+        padding: 0 0 2rem 0;
+    }
+
+    .card .cardImage {
+        width: 108% !important;
+    }
+
+    .carousel-item {
+        margin-top: 8rem;
+    }
+
+    .carousel-inner {
+        width: 80%;
+    }
+
+    .carousel-control-prev {
+        left: 3%;
+    }
+
+    .carousel-control-next {
+        right: 3%;
+    }
+
+    .follow {
+        height: 80vh !important;
+        padding-top: 7rem;
+    }
+
+    .follow h1 {
+        font-size: 2.2rem;
+    }
+
+    .follow i {
+        font-size: 1rem;
+    }
+
+    /* form container  */
+    .form-main-container {
+        height: auto !important;
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .form-main-container>div {
+        margin: auto;
+    }
+
+    .cannt-find {
+        width: 100% !important;
+        align-items: start;
+    }
+
+    .cannt-find h1 {
+        margin-top: 1rem;
+    }
+
+    .form-container {
+        width: 100% !important;
+    }
+
+    table tr td label {
+        padding: 0px !important;
+        color: rgb(131, 131, 131);
+    }
+
+    /* options or footer section  */
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-container>div {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .options ul li {
+        margin: 0.8rem 0;
+    }
+
+    .options ul li a {
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+
+    .darkText {
+        margin-bottom: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .acc {
+        margin-top: 1.8rem !important;
+        font-weight: bold;
+    }
+
+    /* social icons  */
+    .social-icons i {
+        font-size: 1.2rem;
+    }
+
+    .co-logo img {
+        padding-bottom: 0.3rem;
+    }
+
+    .logo p {
+        font-size: 0.7rem;
+    }
+
+    .cont {
+        text-align: left;
+        padding: 0 3rem 2rem;
+        flex-direction: column;
+    }
+
+    .cont .reserve {
+        margin-left: -2rem;
+        padding: 0.8rem 0;
+    }
+
+    .payment {
+        margin-left: -2rem;
+    }
+}
