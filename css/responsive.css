@@ -72,6 +72,9 @@
         font-size: 1.1rem;
         width: 90%;
     }
+    .item h1{
+        font-size: 1rem;
+    }
 
     .carousel-item {
         margin-top: 9rem;
