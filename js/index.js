@@ -109,11 +109,5 @@ $(document).ready(function () {
   });
 });
 
-let scrollBar = document.querySelector('.scroll_to_top');
-if (window.innerHeight>800) {
-  scrollBar.style.display = 'block';  
-}else{
-  scrollBar.style.display = 'none';
-  
-}
+
 

@@ -380,3 +380,61 @@
         margin-left: -2rem;
     }
 }
+
+@media (max-width: 390px) {
+    .navbar {
+        height: 9vh !important;
+        padding: 0 1rem;
+    }
+
+    .toggle-menu {
+        top: 8vh;
+    }
+
+    .toggle-btn {
+        height: 23px;
+        width: 28px !important;
+    }
+
+    .sayhello button {
+        font-size: 1rem;
+    }
+
+    /* cards container  */
+
+    .cards .item {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .carousel-item {
+        margin-top: 6rem;
+    }
+
+    .follow {
+        padding-top: 6rem;
+    }
+}
+
+@media (max-width: 360px) {
+    /* cards container  */
+
+    .cards .item {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .carousel-item {
+        margin-top: 1rem;
+    }
+
+    .follow {
+        padding-top: 5rem !important;
+        height: 100vh !important;
+    }
+
+    .follow .item img {
+        height: 300px !important;
+        width: 300px !important;
+    }
+}
