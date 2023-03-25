@@ -5,210 +5,278 @@
 }
 
 /* desktop and laptop  */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .heading h3 {
+        width: 40%;
+    }
+
+    .heading::before {
+        width: 35%;
+    }
+
+    .heading::after {
+        width: 35%;
+    }
+
+    .carousel-inner {
+        margin: 17% auto;
+        width: 70%;
+    }
+
+    .follow h1 {
+        font-size: 2.3rem;
+    }
+
+    .follow i {
+        font-size: 1.3rem;
+    }
+
+    .follow-container {
+        margin-top: 3rem;
+
+    }
+
+    .item img {
+        height: 220px !important;
+        width: 220px !important;
+    }
+
+    .cannt-find {
+        width: 40%;
+        margin-top: 10rem;
+    }
+
+    .form-container {
+        width: 60%;
+    }
+
+    .form-container form {
+        width: 80%;
+
+    }
+
+    .form-container form table {
+        width: 100%;
+    }
+
+    table tr td input,
+    textarea {
+        padding: 13px 10px;
+        margin-top: 10px;
+    }
+
+    .colspans>td input {
+        width: 100%;
+    }
+    .reserve{
+        margin: 1rem 0;
+    }
+}
 
 
 /* tablet and ipads  */
-@media (min-width: 769px)and (max-width:1023px)  {
-     .navbar {
-         height: 8vh !important;
-         padding: 0 3rem;
-     }
+@media (min-width: 769px)and (max-width:1023px) {
+    .navbar {
+        height: 8vh !important;
+        padding: 0 3rem;
+    }
 
-     .company-logo h3 {
-         font-size: 1.3rem;
-     }
+    .company-logo h3 {
+        font-size: 1.3rem;
+    }
 
-     .company-logo p {
-         font-size: 0.8rem;
-     }
+    .company-logo p {
+        font-size: 0.8rem;
+    }
 
-     .horizontal-list {
-         display: none;
-     }
+    .horizontal-list {
+        display: none;
+    }
 
-     .toggle-btn {
-         display: flex;
-         height: 28px;
-         width: 40px !important;
-     }
+    .toggle-btn {
+        display: flex;
+        height: 28px;
+        width: 40px !important;
+    }
 
-     #bg-video {
-         height: 92vh;
-         object-fit: cover;
-         pointer-events: none;
-         z-index: -2;
-     }
+    #bg-video {
+        height: 92vh;
+        object-fit: cover;
+        pointer-events: none;
+        z-index: -2;
+    }
 
-     .over-text {
-         height: auto;
-         width: 40%;
-         bottom: 12%;
-         left: 10%;
-     }
+    .over-text {
+        height: auto;
+        width: 40%;
+        bottom: 12%;
+        left: 10%;
+    }
 
-     .sayhello {
-         padding: 4rem 0;
-     }
+    .sayhello {
+        padding: 4rem 0;
+    }
 
-     .div1 {
-         width: 90%;
-         font-size: 1.8rem;
-         font-family: inter;
-     }
+    .div1 {
+        width: 90%;
+        font-size: 1.8rem;
+        font-family: inter;
+    }
 
-     .div2 {
-         width: 65%;
-         margin: 4rem 0;
-         text-align: center;
-         font-size: 1.1rem;
-     }
+    .div2 {
+        width: 65%;
+        margin: 4rem 0;
+        text-align: center;
+        font-size: 1.1rem;
+    }
 
-     /* cards container  */
-     .heading h3 {
-         font-size: 1.1rem;
-         width: 90%;
-     }
+    /* cards container  */
+    .heading h3 {
+        font-size: 1.1rem;
+        width: 90%;
+    }
 
-     .item h1 {
-         font-size: 1rem;
-     }
+    .item h1 {
+        font-size: 1rem;
+    }
 
-     .carousel-item {
-         margin-top: 15rem;
-         font-size: 1.8rem;
-     }
+    .carousel-item {
+        margin-top: 15rem;
+        font-size: 1.8rem;
+    }
 
-     .follow {
-         height: 100vh !important;
-         padding-top: 15rem;
-     }
+    .follow {
+        height: 100vh !important;
+        padding-top: 15rem;
+    }
 
-     .follow h1 {
-         font-size: 2.5rem;
-     }
+    .follow h1 {
+        font-size: 2.5rem;
+    }
 
-     .follow i {
-         font-size: 1.4rem;
-     }
+    .follow i {
+        font-size: 1.4rem;
+    }
 
-     .follow .item img {
-         height: 350px !important;
-         width: 350px !important;
-     }
+    .follow .item img {
+        height: 350px !important;
+        width: 350px !important;
+    }
 
-     /* form container  */
-     .form-main-container {
-         height: auto !important;
-         padding: 2rem 1rem;
-     }
+    /* form container  */
+    .form-main-container {
+        height: auto !important;
+        padding: 2rem 1rem;
+    }
 
-     .form-main-container>div {
-         margin: auto;
-     }
+    .form-main-container>div {
+        margin: auto;
+    }
 
-     .cannt-find {
-         height: 100% !important;
-         width: 40% !important;
-     }
+    .cannt-find {
+        height: 100% !important;
+        width: 40% !important;
+    }
 
-     .cannt-find h1 {
-         font-size: 2.5rem;
-         margin-top: 0;
-         margin-top: -19rem;
-         font-weight: 400;
-     }
+    .cannt-find h1 {
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-top: -19rem;
+        font-weight: 400;
+    }
 
-     .cannt-find p {
-         font-size: 15px;
-     }
+    .cannt-find p {
+        font-size: 15px;
+    }
 
-     .form-container {
-         width: 100%;
-     }
+    .form-container {
+        width: 100%;
+    }
 
-     .form-container form table {
-         width: 100%;
-         margin: auto;
-     }
+    .form-container form table {
+        width: 100%;
+        margin: auto;
+    }
 
-     .form-container form {
-         padding: 3rem 0;
-     }
+    .form-container form {
+        padding: 3rem 0;
+    }
 
-     .colspans {
-         display: flex;
-         flex-direction: column;
-     }
+    .colspans {
+        display: flex;
+        flex-direction: column;
+    }
 
-     #name {
-         height: 2.5rem !important;
-     }
+    #name {
+        height: 2.5rem !important;
+    }
 
-     .colspans td input {
-         width: 100%;
-         height: 2.5rem !important;
-     }
+    .colspans td input {
+        width: 100%;
+        height: 2.5rem !important;
+    }
 
-     /* options or footer section  */
-     .contact-container {
-         justify-content: space-around;
-         padding: 1rem;
-     }
+    /* options or footer section  */
+    .contact-container {
+        justify-content: space-around;
+        padding: 1rem;
+    }
 
-     .contact-container>div {
-         width: 25%;
-         padding: 0 0.8rem;
-     }
+    .contact-container>div {
+        width: 25%;
+        padding: 0 0.8rem;
+    }
 
-     .options ul li a {
-         font-size: 0.65rem;
-     }
+    .options ul li a {
+        font-size: 0.65rem;
+    }
 
-     .darkText {
-         margin-bottom: 0.8rem;
-     }
+    .darkText {
+        margin-bottom: 0.8rem;
+    }
 
-     /* social icons  */
-     .social-icons {
-         width: 50%;
-         height: 40px !important;
-     }
+    /* social icons  */
+    .social-icons {
+        width: 50%;
+        height: 40px !important;
+    }
 
-     .social-icons li {
-         margin-right: 15px;
-     }
+    .social-icons li {
+        margin-right: 15px;
+    }
 
-     .social-icons i {
-         font-size: 1.3rem;
-     }
+    .social-icons i {
+        font-size: 1.3rem;
+    }
 
-     .logo {
-         display: none;
-     }
+    .logo {
+        display: none;
+    }
 
-     .co-logo img {
-         display: block;
-         padding-bottom: 1rem;
-     }
+    .co-logo img {
+        display: block;
+        padding-bottom: 1rem;
+    }
 
-     .logo p {
-         font-size: 0.7rem;
-     }
+    .logo p {
+        font-size: 0.7rem;
+    }
 
-     .cont {
-         text-align: left;
-         padding: 0 3rem 2rem;
-         flex-direction: column;
-     }
-     .reserve{
+    .cont {
+        text-align: left;
+        padding: 0 3rem 2rem;
+        flex-direction: column;
+    }
+
+    .reserve {
         padding: 0.5rem 0 !important;
         font-size: 10px;
-     }
-     .payment{
+    }
+
+    .payment {
         padding-top: 0.5rem;
-     }
- }
+    }
+}
 
 /* mobile view  */
 @media (max-width: 768px) {
@@ -271,7 +339,8 @@
         font-size: 1.1rem;
         width: 90%;
     }
-    .item h1{
+
+    .item h1 {
         font-size: 1rem;
     }
 
@@ -602,6 +671,7 @@
     .sayhello button {
         font-size: 1rem;
     }
+
     /* cards container  */
     .cards .item {
         width: 100%;
